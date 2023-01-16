@@ -13,6 +13,7 @@ describe('Testando o componente <Pokedex.js />', () => {
 
     expect(title).toBeInTheDocument();
   });
+
   test('exibido o próximo Pokémon da lista quando o botão Próximo Pokémon é clicado', () => {
     renderWithRouter(<App />);
 
@@ -43,6 +44,7 @@ describe('Testando o componente <Pokedex.js />', () => {
 
     expect(pikachu).toBeInTheDocument();
   });
+
   test('É mostrado apenas um Pokémon por vez', () => {
     renderWithRouter(<App />);
 
@@ -55,6 +57,7 @@ describe('Testando o componente <Pokedex.js />', () => {
     userEvent.click(buttonClick);
     expect(card).toHaveLength(1);
   });
+
   test('Pokédex tem os botões de filtro', () => {
     renderWithRouter(<App />);
 
@@ -78,6 +81,7 @@ describe('Testando o componente <Pokedex.js />', () => {
     expect(type).toHaveTextContent(pokemonType);
     expect(buttons).toBeInTheDocument();
   });
+
   test('Pokédex contém um botão para resetar o filtro', () => {
     renderWithRouter(<App />);
 
