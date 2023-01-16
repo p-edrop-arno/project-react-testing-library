@@ -4,7 +4,6 @@ import '@testing-library/jest-dom/extend-expect';
 import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../renderWithRouter';
 import App from '../App';
-import Pokedex from '../pages';
 
 describe('Testando o componente <Pokedex.js />', () => {
   test('Página contém um heading h2 com o texto "Encountered Pokémon"', () => {
