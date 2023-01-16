@@ -11,6 +11,7 @@ describe('Testando o componente <NotFound.js />', () => {
 
     expect(text).toBeInTheDocument();
   });
+
   test('página mostra a imagem "https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif"', () => {
     renderWithRouter(<NotFound />);
 
