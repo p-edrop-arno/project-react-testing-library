@@ -31,7 +31,7 @@ describe('Testando o componente <App.js />', () => {
     expect(history.location.pathname).toBe('/');
   });
 
-  test('aplicação é redirecionada para a página de About', () => {
+  test('Aplicação é redirecionada para a página de About', () => {
     const { history } = renderWithRouter(<App />);
     const aboutLink = screen.getByRole('link', { name: /About/i });
 
@@ -40,7 +40,7 @@ describe('Testando o componente <App.js />', () => {
     expect(history.location.pathname).toBe('/about');
   });
 
-  test('aplicação é redirecionada para a página de Pokémon Favoritados', () => {
+  test('Aplicação é redirecionada para a página de Pokémon Favoritados', () => {
     const { history } = renderWithRouter(<App />);
     const favoritePokemon = screen.getByRole('link', { name: /Favorite Pokémon/i });
 

@@ -12,7 +12,7 @@ describe('Testando o componente <About.js />', () => {
     expect(title).toBeInTheDocument();
   });
 
-  test('Página contém dois parágrafos com o texto "Pokédex"', () => {
+  test('Página contém dois parágrafos com o texto sobre a Pokédex', () => {
     renderWithRouter(<About />);
 
     const texts = screen.getAllByText(/pokémon/i);
